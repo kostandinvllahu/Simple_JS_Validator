@@ -1,0 +1,82 @@
+function StringContainsNumbers(string) {
+    return /\d/.test(string);
+  }
+  
+  function StringContainsLetters(string){
+      return /[a-zA-Z]/.test(string);
+  }
+ 
+ const specialChars = `/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;`
+
+ let string = "@k05t21998"
+ 
+  const StringContainsSpecialCharacters= specialChars.split('').some(char => string.includes(char)) 
+ 
+  if(StringContainsNumbers(string)){
+    console.log("Ka nr"); 
+ }else{
+     console.log("Ska nr");
+ }
+ 
+ 
+  if(StringContainsLetters(string)){
+    console.log("Ka leter"); 
+ }else{
+      console.log("SKa leter"); 
+ }
+ 
+ 
+
+if(StringContainsSpecialCharacters) {
+    console.log("Ka karaktere"); 
+}else{
+      console.log("SKa karaktere"); 
+}
+
+
+
+=================================================
+
+
+function StringContainsNumbers(string) {
+    return /\d/.test(string);
+  }
+  
+  function StringContainsLetters(string){
+      return /[a-zA-Z]/.test(string);
+  }
+ 
+ const specialChars = `/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;`
+
+ let string = "@k05"
+ 
+  const StringContainsSpecialCharacters= specialChars.split('').some(char => string.includes(char)) 
+ 
+  if(StringContainsNumbers(string)){
+      console.log("sukses")
+    if(StringContainsLetters(string)){
+    console.log("sukses")
+ }else{
+      console.log("SKa leter"); 
+ }
+     if(StringContainsSpecialCharacters) {
+    console.log("sukses") 
+}else{
+      console.log("SKa karaktere"); 
+}
+ }else{
+     console.log("Ska nr");
+ }
+ 
+ 
+  
+ 
+ 
+
+
+
+
+
+
+
+
